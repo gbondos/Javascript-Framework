@@ -1,1 +1,49 @@
+This application is a simple ember.js app.
+I am following a youtube tutorial from Traversy media and creating a similar app.
+It is my first time exploring or building an app with ember.js.
+
+
+STEP 1: Install and download Node JS if you already don't have it install - https://nodejs.org/en/
+STEP 2: For the database of this project, we will be using Firebase -
+ Firebase is a Realtime Database A Cloud Hosted NoSQL Database To Store & Sync Your Mobile App Data.
+ Signup with your google account and click get started, then add project.
+
+STEP 4: Install Ember Inspector, actually it is a plugin that could be added on Google Chrome
+
+############### INSTALLING EMBER FRAMEWORK ########################
+Install Ember
+STEP 1: Go to command prompt or command line - run this command # npm install -g ember-cli
+Create a New Application
+Once you've installed Ember CLI via npm, you will have access to a new ember command in your terminal. You can use the ember new command to create a new application.
+
+CODE:  ember new ember-quickstart
+
+Make sure everything is working properly. cd into the application directory ember-quickstart and start the development server by typing:
+
+cd ember-quickstart
+ember serve
+
+STEP 2:
+start by editing the application template. This template is always on screen while the user has your application loaded. In your editor, open app/templates/application.hbs and change it to the following:
+
+app/templates/application.hbs
+<h1>PeopleTracker</h1>
+
+{{outlet}}
+
+STEP 3:
+Define a Route
+you can think of routes as being the different pages that make up your application.
+To generate a route, type this in a new terminal window in your ember-quickstart directory:
+ember generate route scientists
+
+
+STEP 4:
+Create a UI Component
+ create a people-list component that we can use in multiple places to show a list of people.
+
+As usual, there's a generator that makes this easy for us. Make a new component by typing:
+
+ember generate component people-list
+
 
